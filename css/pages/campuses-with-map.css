@@ -1,0 +1,22 @@
+.main-content {
+  display: flex;
+}
+.main-content .cards {
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-grow: 1;
+}
+@media (max-width: 992px) {
+  .main-content .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.main-content #map {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
